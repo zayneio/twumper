@@ -22,7 +22,21 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+twumper = Twumper.new
+
+#set consumer key and secret values 
+twumper.config do |tw|
+  tw.consumer_key = YOUR_CONSUMER_KEY
+  tw.consumer_secret = YOUR_CONSUMER_SECERET
+end
+
+# retrieve and set your bearer key
+twumper.get_bearer
+
+# search for a keyword and retrieve related tweets
+twumper.search('christmas')
+```
 
 ## Development
 
