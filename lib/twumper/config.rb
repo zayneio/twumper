@@ -4,20 +4,13 @@ module Twumper
   module Config
     
     attr_accessor :headers, :consumer_key, :consumer_secret, :bearer
-    
-    DEFAULT_API_URL = 'https://api.twitter.com/1.1/'
-    DEFAULT_HEADERS = { 
-    	accept: 'application/json', 
-    	user_agent: "twumper gem #{Twumper::VERSION}",
-		  content_type: "application/x-www-form-urlencoded;charset=UTF-8"
-    }
 
     def config 
      yield self
     end 
 
     def reset 
-      self.headers = DEFAULT_HEADERS
+      self.headers = nil
       self.consumer_key = nil
       self.consumer_secret = nil
       self.bearer = nil
