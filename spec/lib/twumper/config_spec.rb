@@ -4,7 +4,7 @@ RSpec.describe Twumper::Config do
     expect(twumper.headers).to eq({
       :accept=>"application/json", 
       :content_type=>"application/x-www-form-urlencoded;charset=UTF-8", 
-      :user_agent=>"twity gem 0.1.0"
+      :user_agent=>"twumper gem 0.1.0"
     })
   end
 

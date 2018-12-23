@@ -19,7 +19,8 @@ module Twumper
       when :post
       	response = connection.post(url, body: body, headers: headers)
       end
-      build(response.body)
+      # build(response.body)
+      response.body
     end
   end
 end
