@@ -6,10 +6,11 @@ require_relative 'search'
 
 module Twumper
   class Client
+    include Twumper::Config
+    include Twumper::Connection
     include Twumper::Request
     include Twumper::Response
-    include Twumper::Connection
-    include Twumper::Config
+    include Twumper::Search
 
     def initialize
       reset
