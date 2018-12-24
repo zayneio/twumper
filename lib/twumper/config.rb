@@ -1,7 +1,6 @@
 module Twumper
   module Config
-    include Auth
-    
+
     attr_accessor :headers, :consumer_key, :consumer_secret, :bearer
 
     def config 

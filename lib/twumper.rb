@@ -1,4 +1,3 @@
-require "twumper/version"
 require "twumper/client"
 
 module Twumper
