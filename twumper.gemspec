@@ -6,18 +6,18 @@ require "twumper/version"
 Gem::Specification.new do |spec|
   spec.name          = "twumper"
   spec.version       = Twumper::VERSION
-  spec.authors       = ["zayneio"]
+  spec.authors       = ["zayne"]
   spec.email         = ["hello@zayne.io"]
 
   spec.summary       = %q{Write a short summary, because RubyGems requires one.}
   spec.description   = %q{Write a longer description or delete this line.}
-  spec.homepage      = "https://zayne.io"
+  spec.homepage      = "https://rubygems.org"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "https://zayne.io"
+    spec.metadata["allowed_push_host"] = "https://rubygems.org"
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."
@@ -35,6 +35,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_development_dependency "byebug"
   spec.add_dependency "httparty", "~> 0.13.7"
 end

@@ -1,10 +1,10 @@
 RSpec.describe Twumper::Config do
-  it 'has default configuration values' do 
-    twumper = Twumper.new  
+  it 'has default configuration values' do
+    twumper = Twumper.new
     expect(twumper.headers).to eq({
-      :accept=>"application/json", 
-      :content_type=>"application/x-www-form-urlencoded;charset=UTF-8", 
-      :user_agent=>"twumper gem 0.1.0"
+      :accept=>"application/json",
+      :content_type=>"application/x-www-form-urlencoded;charset=UTF-8",
+      :user_agent=>"twumper gem 0.1.1"
     })
   end
 
